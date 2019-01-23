@@ -608,7 +608,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 454343332}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1367965841}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2053963676}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &454343332
@@ -1328,7 +1350,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 819159478}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2053963676}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1367965841}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &819159478
@@ -1810,6 +1854,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1367965842}
+  - component: {fileID: 1367965843}
   m_Layer: 0
   m_Name: LoginPanel
   m_TagString: Untagged
@@ -1841,6 +1886,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1367965843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1367965841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee341d2e6931c044caa5ce5998c18dfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UsernameInput: {fileID: 474650833}
+  PasswordInput: {fileID: 324301280}
+  LoginButton: {fileID: 2059333480}
 --- !u!1 &1426363557
 GameObject:
   m_ObjectHideFlags: 0
@@ -2471,6 +2530,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2053963677}
+  - component: {fileID: 2053963678}
   m_Layer: 0
   m_Name: RegisterPanel
   m_TagString: Untagged
@@ -2502,6 +2562,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2053963678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2053963676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f3864ffec0328b499ff473635602c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UsernameInput: {fileID: 319693398}
+  PasswordInput: {fileID: 1445931045}
+  RegisterButton: {fileID: 1765962347}
 --- !u!1 &2059333478
 GameObject:
   m_ObjectHideFlags: 0
@@ -2514,7 +2588,7 @@ GameObject:
   - component: {fileID: 2059333481}
   - component: {fileID: 2059333480}
   m_Layer: 0
-  m_Name: LoginrButton
+  m_Name: LoginButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
